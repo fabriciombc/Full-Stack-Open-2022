@@ -1,0 +1,12 @@
+
+Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+Server-->Browser: 302 Found
+Browser->Server: HTTP GET https://fulstack-example.herokuapp.com/notes
+Server-->Browser: HTML-Code
+Browser->Server: HTTP GET http://fullstack-example.herokuapp.com/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET http://fullstack-example.herokuapp.com/main.js
+Server-->Browser: main.js
+Browser->Server: HTTP GET http://fullstack-example.herokuapp.com/data.json
+Server-->Browser: [{content: "User new note", date: "2022-09-12"},...]
+
